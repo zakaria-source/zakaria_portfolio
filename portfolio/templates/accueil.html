@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <!-- Inclure Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Styles CSS personnalisés */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .navbar {
+            background: #343a40;
+        }
+        .navbar-dark .navbar-brand {
+            font-size: 24px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            font-size: 18px;
+            color: white;
+            margin-right: 20px;
+        }
+        .section {
+            background: white;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .section h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- En-tête -->
+<header class="header">
+    <div class="container">
+        <h1>Bienvenue sur Mon Portfolio</h1>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">MonPortfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="apropos" class="container-fluid py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-white border-0 shadow">
+                    <img src="votre-image.jpg" alt="Votre photo" class="card-img-top rounded-circle">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2 class="display-4 text-primary">Zakaria Dbaba</h2>
+                <p class="lead">Ingénieur Logiciel Backend</p>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> 17bis rue Riquet, 31000 Toulouse</p>
+                    <p><i class="fas fa-phone"></i> Mobile : 0769999865</p>
+                    <p><i class="fas fa-envelope"></i> Email : <a href="mailto:zakaria-dbaba@hotmail.com"
+                                                                  class="text-primary">zakaria-dbaba@hotmail.com</a></p>
+                    <p><i class="fab fa-linkedin"></i> LinkedIn : <a href="https://www.linkedin.com/in/zakaria-dbaba"
+                                                                     class="text-primary">www.linkedin.com/in/zakaria-dbaba</a>
+                    </p>
+                </address>
+                <div class="mt-4">
+                    <h3 class="text-primary">Résumé</h3>
+                    <p>Je suis un ingénieur logiciel spécialisé dans le développement backend. Ma passion réside dans la
+                        résolution de problèmes complexes et la création de solutions innovantes.</p>
+                </div>
+                <div class="mt-4">
+                    <h3 class="text-primary">Compétences</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Langages de programmation : Python, JavaScript, C++</li>
+                        <li class="list-group-item">Développement Web</li>
+                        <li class="list-group-item">Gestion de bases de données</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section Résumé -->
+<section class="container section">
+    <h2>Résumé</h2>
+    <p>Ingénieur Logiciel passionné par la résolution de problèmes complexes et le développement de solutions
+        innovantes. Expérience en Python, JavaScript, C++, et divers outils et technologies de développement.</p>
+</section>
+
+<!-- Section Projets -->
+<section id="projets" class="container section">
+    <h2 class="text-center">Mes Projets</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="projet1.jpg" alt="Projet 1" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Gestion de Projet IFEM</h5>
+                    <p class="card-text">
+                        Contribué activement à l'élaboration de roadmaps pour les projets IFEM et MOSAIC, assurant le
+                        respect des échéances et promouvant une collaboration agile.
+                    </p>
+                    <a href="#" class="btn btn-primary">Plus d'infos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="projet2.jpg" alt="Projet 2" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Optimisation de Code IFEM</h5>
+                    <p class="card-text">
+                        Amélioré les performances et la qualité du code du projet IFEM, augmentant le score Pylint de
+                        70% à 95%.
+                    </p>
+                    <a href="#" class="btn btn-primary">Plus d'infos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="projet3.jpg" alt="Projet 3" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Migration vers Openpyxl (MOSAIC)</h5>
+                    <p class="card-text">
+                        Mené la migration réussie d'Excel vers Openpyxl pour le projet MOSAIC, réduisant le temps de
+                        traitement des données de 50%.
+                    </p>
+                    <a href="#" class="btn btn-primary">Plus d'infos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Compétences -->
+<section id="competences" class="container section">
+    <h2>Compétences</h2>
+    <p>/* Détail de vos compétences ici */</p>
+</section>
+
+<!-- Section Contact -->
+<section id="contact" class="container section">
+    <h2>Contactez-moi</h2>
+    <p>/* Formulaire de contact ou informations de contact */</p>
+</section>
+
+<!-- Pied de page -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<!-- Scripts Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
